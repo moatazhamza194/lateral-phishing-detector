@@ -38,4 +38,9 @@ This project is based on research papers exploring **phishing detection and user
 
 ## 🛠️ Tech Stack
 - **Backend:** Python, Flask, scikit-learn, pandas, numpy, joblib, tldextract  
-- **Frontend:** Chrome Extension (HTML, CSS, JavaScript)  
+- **Frontend:** Chrome Extension (HTML, CSS, JavaScript) 
+
+## 🛠️ How To Use
+- Add the Extension to Google Chrome.
+- Run The app.py from backend.
+- Open and Email inbox from demo. 
