@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gmail Visual Mock - Enron Email</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body.email {
+      background: url('gmail-screenshot.png') no-repeat center top;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="email">
+  <!-- ✅ Top-right user avatar with status -->
+  <div class="user-avatar-wrapper">
+    <div class="user-avatar">
+      <span id="userInitial">M</span>
+      <div class="status-dot"></div>
+    </div>
+  </div>
+
+  <div class="email-container">
+    <h1 class="subject">PG&E Plan of Reorganization</h1>
+
+    <div class="sender-info">
+      <!-- Sender avatar -->
+      <div class="avatar">G</div>
+
+      <div class="sender-meta">
+        <div class="sender-row">
+          <strong>glen.hass@enron.com</strong>
+          <span class="timestamp">2002-01-15 11:07:12</span>
+        </div>
+        <div class="receiver-name">to Michelle</div>
+        <span class="material-icons dropdown-toggle" onclick="toggleDetails()">expand_more</span>
+
+        <div id="email-details" class="email-details">
+          <p><strong>from:</strong> glen.hass@enron.com</p>
+          <p><strong>to:</strong> michelle.lokay@enron.com, teb.lokey@enron.com, steven.harris@enron.com, blair.lichtenwalter@enron.com, lorraine.lindberg@enron.com, kimberly.watson@enron.com, robert.kilmer@enron.com, bill.rapp@enron.com, stephen.veatch@enron.com, lindy.donoho@enron.com</p>
+          <p><strong>date:</strong> 2002-01-15 11:07:12</p>
+          <p><strong>subject:</strong> PG&E Plan of Reorganization</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="email-body">
+      Please plan to attend a meeting on Thursday, January 17, 2002 at 8:30 AM in Conf. Rm. 1336 to discuss Transwesterns position on PG&E's Plan of Reorganization. In particular they have requested our support of their filing at FERC (Docket No. CP02-41) to convert their backbone system into an interstate pipeline (GTrans). Interventions in this docket are due January 29th. Below is the link to PG&E's home page location with a summary of their proposal. Should you have any other questions or need additional data, please advise. gh 
+      <p><a href="http://www.pge.com/pipeline/library/por/gtrans.pdf">http://www.pge.com/pipeline/library/por/gtrans.pdf</a></p>
+    </div>
+
+    <hr />
+
+    <div class="email-actions">
+      <button>Reply</button>
+      <button>Reply all</button>
+      <button>Forward</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails() {
+      const box = document.getElementById('email-details');
+      const icon = document.querySelector('.dropdown-toggle');
+      box.style.display = box.style.display === 'block' ? 'none' : 'block';
+      icon.textContent = box.style.display === 'block' ? 'expand_less' : 'expand_more';
+    }
+
+    // Set user initial in top-right avatar dynamically
+    const userEmail = 'michelle.lokay@enron.com';
+    document.getElementById('userInitial').textContent = userEmail.charAt(0).toUpperCase();
+  </script>
+</body>
+</html>

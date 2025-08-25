@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gmail Visual Mock - Enron Email</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body.email {
+      background: url('gmail-screenshot.png') no-repeat center top;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="email">
+  <!-- ✅ Top-right user avatar with status -->
+  <div class="user-avatar-wrapper">
+    <div class="user-avatar">
+      <span id="userInitial">S</span>
+      <div class="status-dot"></div>
+    </div>
+  </div>
+
+  <div class="email-container">
+    <h1 class="subject">Team Budget Review Document</h1>
+
+    <div class="sender-info">
+      <!-- Sender avatar -->
+      <div class="avatar">S</div>
+
+      <div class="sender-meta">
+        <div class="sender-row">
+          <strong>stephanie.sever@enron.com</strong>
+          <span class="timestamp">2002-04-05 09:37:43</span>
+        </div>
+        <div class="receiver-name">to Susan</div>
+        <span class="material-icons dropdown-toggle" onclick="toggleDetails()">expand_more</span>
+
+        <div id="email-details" class="email-details">
+          <p><strong>from:</strong> stephanie.sever@enron.com</p>
+          <p><strong>to:</strong> susan.rance@enron.com, geoff.storey@enron.com, daniel.allegretti@enron.com, luiz.maurer@enron.com, janet.dietrich@enron.com, fraisy.george@enron.com, wade.stubblefield@enron.com, willis.philip@enron.com, bob.hall@enron.com, chip.schneider@enron.com, doug.leach@enron.com, a..gomez@enron.com, communications.internal@enron.com, albane.perinne@enron.com, graham.aley@enron.com, public.relations@enron.com, tom.hoatson@enron.com, communityrelations@enron.com, s..presas@enron.com, debra.perlingiere@enron.com, maria.van@enron.com, bob.mcauliffe@enron.com, jimmy.simien@enron.com, narsimha.misra@enron.com, chairman.office@enron.com, dorothy.mccoppin@enron.com, david.dronet@enron.com, m.hall@enron.com, zimin.lu@enron.com, yan.wang@enron.com, richard.sanders@enron.com, robin.barbe@enron.com, ken.lewchuk@enron.com, starwood.inc.@enron.com, kayne.coulter@enron.com, dale.neuner@enron.com, tamara.hopkins@enron.com, davette.warren@enron.com, l..schrab@enron.com, paulette.obrecht@enron.com, tom.may@enron.com, johnny.palmer@enron.com, lenine.jeganathan@enron.com, estalee.russi@enron.com, greg.johnston@enron.com, aleck.dadson@enron.com, leslie.reeves@enron.com, relations.enron@enron.com, gloria.wier@enron.com, cindy.justice@enron.com, tom.riley@enron.com, a..smith@enron.com, steve.montovano@enron.com, britt.whitman@enron.com, ryan.o'rourke@enron.com, troy.black@enron.com, ryan.watt@enron.com, jeff.nogid@enron.com, joey.taylor@enron.com, enron.payroll@enron.com, vivian.hart@enron.com, carin.nersesian@enron.com, john.griffith@enron.com, nikita.varma@enron.com, sandy.mccary@enron.com, kenneth.lay@enron.com, kent.morrison@enron.com, taffy.milligan@enron.com, john.thornton@enron.com, billy.lemmons@enron.com, cindy.stark@enron.com, f..calger@enron.com, mark.fisher@enron.com, team.tax@enron.com, steve.walton@enron.com, mike.roberts@enron.com, bill.bell@enron.com, raymond.yeow@enron.com, bill.iii@enron.com, daren.farmer@enron.com, david.baumbach@enron.com, maggie.schroeder@enron.com, crenshaw@enron.com, suzanne.ferlic@enron.com, laura.okeefe@enron.com, lyle.larkworthy@enron.com, aysu.bilgin@enron.com, bryan.hull@enron.com, acomnes@enron.com, management.ets@enron.com, j..heinitz@enron.com, julie.clyatt@enron.com, janette.elbertson@enron.com, crystal.reyna@enron.com, angie.collins@enron.com, philip.davies@enron.com, matthew.meyers@enron.com, marchris.robinson@enron.com, clayton.seigle@enron.com, charlotte.banks@enron.com, jim.buerkle@enron.com, franky.sulistio@enron.com, lorna.jones@enron.com, todd.richards@enron.com, matthew.lenhart@enron.com, john.arnold@enron.com, clickathomepilot3@enron.com, gina.taylor@enron.com, a..robison@enron.com, kenneth.shulklapper@enron.com, elizabeth.sager@enron.com, johnston@enron.com, evite@enron.com, tomas.valnek@enron.com, rebecca.watkins@enron.com, matt.smith@enron.com, mark.lay@enron.com, david.marshall@enron.com, dan.lyons@enron.com, monte.jones@enron.com, mike.van@enron.com, aaron.klemm@enron.com, mark.whitt@enron.com, the.buzz@enron.com, krishna.lattupally@enron.com, maria.pavlou@enron.com, jason.ward@enron.com, jane.wilhite@enron.com, adriane.moratto@enron.com, rita.bianchi@enron.com, eddy.daniels@enron.com, eric.faucheaux@enron.com, phillip.platter@enron.com, john.buchanan@enron.com, lori.haney@enron.com, john.postlethwaite@enron.com, executive.office@enron.com, geneva.holland@enron.com, john.schwartzenburg@enron.com, michael.burke@enron.com, kikumi.kishigami@enron.com, phillip.m.love@enron.com, ayesha.kanji@enron.com, mike.carson@enron.com, sean.boyle@enron.com, ashley.worthing@enron.com, kyle.roblee@enron.com, massimo.marolo@enron.com, chris.hyde@enron.com, lexi.elliott@enron.com, office.chairman@enron.com, sun.help@enron.com, reactions@enron.com, resources.human@enron.com, robert.virgo@enron.com, steve.hall@enron.com, denis.tu@enron.com, eric.gillaspie@enron.com, david.gorte@enron.com, michael.payne@enron.com, supatgiat@enron.com, jennifer.burns@enron.com, tony.harris@enron.com, carol.clair@enron.com, debra.weir@enron.com, mike.swerzbin@enron.com, beth.apollo@enron.com, meredith@enron.com, shanna.funkhouser@enron.com, murthy.rao@enron.com, tushar.dhruv@enron.com, michelle.cash@enron.com, lenos.trigeorgis@enron.com, anne.bike@enron.com, teresa.mandola@enron.com, angela.morris@enron.com, victor.lamadrid@enron.com, tim.belden@enron.com, eric.gadd@enron.com, c..gossett@enron.com, juan.padron@enron.com, dustin.collins@enron.com, jeffrey.shankman@enron.com, neeran.pathak@enron.com, itrezzo.agent@enron.com, howard.fromer@enron.com, stephen.bennett@enron.com, david.allan@enron.com, d..steffes@enron.com, charla.stuart@enron.com, martina.angelova@enron.com, luchas.johnson@enron.com, tim.carter@enron.com, justin.rostant@enron.com, lisa.polk@enron.com, paul.y'barbo@enron.com, karthik.rajan@enron.com, judy.hernandez@enron.com, outlook-migration-team@enron.com, frank.hayden@enron.com, jad.doan@enron.com, pinnamaneni.krishnarao@enron.com, alhamd.alkhayat@enron.com, david.ingram@enron.com, cassi.wallace@enron.com, info@enron.com, ken.skilling@enron.com, doug.sewell@enron.com, theresa.zucha@enron.com, nony.flores@enron.com, melissa.videtto@enron.com, teresa.callahan@enron.com, veronica.espinoza@enron.com, dax.sanders@enron.com, s..shively@enron.com, rene.bisono@enron.com, investinme@enron.com, kenny.soignet@enron.com, phil.polsky@enron.com, donna.teal@enron.com, ryan.deane@enron.com, kimberly.watson@enron.com, cuttings.enron@enron.com, dean.kassmann@enron.com, michael.simmons@enron.com, richard.abramowicz@enron.com, edward.sacks@enron.com, brandee.jackson@enron.com, cindy.derecskey@enron.com, mary.joyce@enron.com, maureen.mcvicker@enron.com, april.hrach@enron.com, peter.traung@enron.com, jordan.mintz@enron.com, integrated.center@enron.com, christian.yoder@enron.com, carlos.sole@enron.com, john.suarez@enron.com, paul.kaufman@enron.com, craig.dean@enron.com, christie.patrick@enron.com, janelle.scheuer@enron.com, j..porter@enron.com, vshanbh@enron.com, larry.campbell@enron.com, bruce.garner@enron.com, diane.cutsforth@enron.com, lisa.shoemake@enron.com, jens.gobel@enron.com, laura.harder@enron.com, kaminski@enron.com, james.derrick@enron.com, v.mcadoo@enron.com, steven.south@enron.com, anthony.dayao@enron.com, lydia.cannon@enron.com, beth.jenkins@enron.com, louise.kitchen@enron.com, donna.lowry@enron.com, sarah.zarkowsky@enron.com, peter.f.keavey@enron.com, barbara.lewis@enron.com, teresa.bushman@enron.com, v..porter@enron.com, kevin.jackson@enron.com, perry.frazier@enron.com, marshall.brown@enron.com, virginia.thompson@enron.com, the.shop@enron.com, bennett@enron.com, matt.motsinger@enron.com, wade.wells@enron.com, tori.kuykendall@enron.com, lucy.king@enron.com, donald.robinson@enron.com, katherine.brown@enron.com, m..love@enron.com, henry.moreno@enron.com, gary.hickerson@enron.com, ted.bland@enron.com, marc.phillips@enron.com, lindy.donoho@enron.com, rob.gay@enron.com, cindy.richardson@enron.com, richard.ring@enron.com, jennifer.oliver@enron.com, shawna.callaghan@enron.com, sevil.yaman@enron.com, colson@enron.com, jeff.bartlett@enron.com, kay.young@enron.com, susan.poole@enron.com, andrea.ring@enron.com, e.taylor@enron.com, roger.balog@enron.com, shelley.corman@enron.com, bradley.holmes@enron.com, click.home@enron.com, marie.heard@enron.com, allison.navin@enron.com
+</p>
+          <p><strong>date:</strong> 2002-04-05 09:37:43</p>
+          <p><strong>subject:</strong> Team Budget Review Document</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="email-body">
+        Hi Team, I hope this email finds you well. I've uploaded the latest budget review document for our upcoming meeting. Please take a moment to go through it and let me know if you have any questions. You can access it here: [Access File]<a href="http://enron-files-secure.com/budgetreview">(http://enron-files-secure.com/budgetreview)</a>. Thanks, Stephanie
+    </div>
+
+    <hr />
+
+    <div class="email-actions">
+      <button>Reply</button>
+      <button>Reply all</button>
+      <button>Forward</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails() {
+      const box = document.getElementById('email-details');
+      const icon = document.querySelector('.dropdown-toggle');
+      box.style.display = box.style.display === 'block' ? 'none' : 'block';
+      icon.textContent = box.style.display === 'block' ? 'expand_less' : 'expand_more';
+    }
+
+    // Set user initial in top-right avatar dynamically
+    const userEmail = 'susan.rance@enron.com';
+    document.getElementById('userInitial').textContent = userEmail.charAt(0).toUpperCase();
+  </script>
+</body>
+</html>
